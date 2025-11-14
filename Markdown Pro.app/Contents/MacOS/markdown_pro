@@ -2,8 +2,10 @@
 # Launcher script for Markdown Pro
 
 # Get the directory where the app bundle is located
+# This script is in: /path/to/Markdown Pro.app/Contents/MacOS/markdown_pro
+# We need to get to: /path/to/markdown-pro/
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-APP_DIR="$(dirname "$(dirname "$(dirname "$DIR")")")/markdown-pro"
+APP_DIR="$(dirname "$(dirname "$(dirname "$DIR")")")"
 
 # Change to the app directory
 cd "$APP_DIR"
